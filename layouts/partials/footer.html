@@ -1,37 +1,27 @@
-<footer class="common-footer">
-    {{ $languagesCount := $.Site.Home.AllTranslations }}
-    {{ if gt $languagesCount 1 }}
-        {{ partial "language-switcher.html" . }}
+<footer class="footer">
+  <div class="content has-text-centered">
+    {{ if $.GitInfo }}
+    <small>
+      last modified (site) :: {{ $.GitInfo.AuthorDate.Format "January 02, 2006" }}
+      {{ if $.Site.Params.repoLink }}
+      (commit <a href="{{ $.Site.Params.repoLink }}/commit/{{ $.GitInfo.Hash }}" target="_blank">{{ $.GitInfo.AbbreviatedHash }}</a>)
+      {{ else }}
+      (commit {{ $.GitInfo.AbbreviatedHash }})
+      {{ end }}
+     <br>
+     Except where otherwise noted, content on this site is licensed under a <a href="https://www.creativecommons.org/version4/" target="_blank"> Creative Commons Attribution 4.0 International license </a>
+    </small>
     {{ end }}
-
-    <div class="common-footer-bottom">
-        {{ if .Site.Menus.footer }}
-            {{ $currentPage := . }}
-            <ul class="footer-menu">
-            {{ range .Site.Menus.footer }}
-            <li><a class="{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
-            {{ end }}
-            </ul>
-        {{ end }}
-        <div class="copyright">
-            <p>{{ if isset .Site.Params "author"}}{{ .Site.Params.author }}: {{end}} This site is made with &lt;3<br></p>
-            <p> using -&gt; 
-            <a href="https://neovim.io/" target="_blank">neovim</a> |
-            <a href="https://gohugo.io" target="_blank">Hugo</a> | 
-            <a href="https://pages.github.com/" target="_blank">Github Pages</a> | 
-            <a href="https://github.com/Mitrichius/hugo-theme-anubis" target="_blank">Anubis</a>
-            </p>
-
-            <p>Except where otherwise noted, <br>content on this site is licensed under a <br>
-                <a href="https://creativecommons.org/version4/" target="_blank"> Creative Commons Attribution 4.0 International license</a>
-            </p>
-            {{ partial "footer-extra.html" . }}
-            </p>  
-
-            {{ partial "footer-extra.html" . }}
-            </p>  
-        </div> 
-    </div>
-
-    {{ partial "h-card.html" . }}
+    
+    <p>
+      {{ if (not $.Site.Params.disableAttribution) }}
+      <a href="https://github.com/orf/bare-hugo-theme" target="_blank">Bare Hugo theme.</a>
+      {{ end }}
+      {{ if $.Site.Params.repoLink }}
+      Blog source code <a href="{{ $.Site.Params.repoLink }}" target="_blank">available on Github</a>.
+      {{ end }}
+    </p>
+    
+  </div>
 </footer>
+

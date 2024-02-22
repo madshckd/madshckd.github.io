@@ -1,55 +1,27 @@
-baseURL = 'https://madshckd.github.io/'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'madshckd'
-theme = 'hugo-theme-anubis'
-paginate = 5
-
-[author]
-name = "mads"
-
-[params]
-author = "mads"
-style = "auto"
-readMore = true
-copyCodeButton = true
-rssAsSocialIcon = true
-
-
-[[params.social]]
-id = "telegram"
-url = "https://t.me/madstxtd"
-
-[[params.social]]
-id = "github"
-url = "https://github.com/madshckd"
-
-
-[menu]
-
-[[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 4
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 3
-
-[[menu.main]]
-name = "Posts"
-identifier = "posts"
-url = "/posts/"
-weight = 2
+title = "mads' corner of internet"
+theme = 'bare'
+paginate = 20
+enableGitInfo = true
 
 [taxonomies]
-category = "categories"
-tag = "tags"
+  category = "categories"
+
+[params]
+mainSections = ["posts"]
+author = "madshckd"
+email = "madshckd@gmail.com"
+description = 'gopher and more..'
+postcss = false
+includeAuthorInTitle = true
+hero_colour = "info"
+disableAttribution = true
+
+[markup.highlight]
+noClasses = false
+theme = "monokai"
+
+[[params.social]]
+icon = "github"
+url = "https://github.com/madshckd/"
