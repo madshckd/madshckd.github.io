@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mads&#39; hack</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on mads&#39; hack</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Jun 2024 14:42:29 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Doc</title>
+      <link>//localhost:1313/docs/first_doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/first_doc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>//localhost:1313/posts/first_post/</link>
+      <pubDate>Sun, 16 Jun 2024 14:42:29 +0530</pubDate>
+      <guid>//localhost:1313/posts/first_post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

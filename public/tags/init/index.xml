@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Init on mads&#39; hack</title>
+    <link>//localhost:1313/tags/init/</link>
+    <description>Recent content in Init on mads&#39; hack</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jan 2024 22:59:55 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/init/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Init</title>
+      <link>//localhost:1313/posts/init/</link>
+      <pubDate>Tue, 23 Jan 2024 22:51:30 +0530</pubDate>
+      <guid>//localhost:1313/posts/init/</guid>
+      <description>Hello all,&#xA;Like computer systems, we also have the first process or the first step, of course I too have one. This blog is about how I got intrigued with technology. The first thing that excited me was Google&amp;rsquo;s &amp;ldquo;search bar&amp;rdquo;. Yeah, you heard it right. I spent a whole lot of time, typing in different words to see differences in search result. At that time, I was not even aware of keywords.</description>
+    </item>
+  </channel>
+</rss>

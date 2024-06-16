@@ -1,27 +1,30 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = "mads' corner of internet"
-theme = 'bare'
+title = "mads' hack"
+theme = 'hugo-book'
 paginate = 20
 enableGitInfo = true
-
-[taxonomies]
-  category = "categories"
+type = 'docs'
+disableKinds = ['taxonomy']
 
 [params]
-mainSections = ["posts"]
-author = "madshckd"
-email = "madshckd@gmail.com"
-description = 'gopher and more..'
-postcss = false
-includeAuthorInTitle = true
-hero_colour = "info"
-disableAttribution = true
 
-[markup.highlight]
-noClasses = false
-theme = "monokai"
+  BookTheme = 'light'
 
-[[params.social]]
-icon = "github"
-url = "https://github.com/madshckd/"
+  BookToC = true
+
+  #BookLogo = 'logo.png'
+
+  BookMenuBundle = '/menu'
+
+  BookSection = 'docs'
+
+  BookDateFormat = 'Jan 2, 2006'
+
+  BookSearch = true
+
+  BookComments = true
+
+  BookPortableLinks = true
+
+  BookServiceWorker = true
